@@ -1,0 +1,39 @@
+#api for listing player records
+###
+GET http://127.0.0.1:8000/players/
+Accept: application/json
+
+#api call for add records
+###
+POST http://127.0.0.1:8000/players/
+Content-Type: application/json
+
+{
+  "name":"sanju samson",
+  "age":34,
+  "sports":"cricket",
+  "ranking":12,
+  "role":"batsman"
+}
+
+#api call for get player detail
+###
+GET http://127.0.0.1:8000/players/1/
+Accept: application/json
+
+#api call for update record
+###
+PUT http://127.0.0.1:8000/players/1/
+Content-Type: application/json
+
+{
+  "name":"thala dhoni",
+  "age":42,
+  "sports":"cricket",
+  "ranking":1,
+  "role":"batsman"
+}
+
+#api call for delete
+###
+DELETE http://127.0.0.1:8000/players/3/
